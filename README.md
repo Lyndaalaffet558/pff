@@ -58,6 +58,7 @@ Démarre sur http://localhost:8000
 # Depuis c:\Users\Bassem\Downloads\PFE-LY\frontend
 npm install
 npm start
+yarn install = install packages
 ```
 Démarre sur http://localhost:3000
 
@@ -79,24 +80,7 @@ Dans la page Médecin: Mes disponibilités (`/doctor/availability`) :
 2. Supprimez un créneau ou une date via les boutons de suppression.
 3. Cliquez **Enregistrer** pour persister.
 
-Formats acceptés par `/api/doctors/me/` (PATCH `availability`):
-```json
-{
-  "availability": {
-    "2025-08-25": ["09:00", "10:30"],
-    "2025-08-26": ["14:00"]
-  }
-}
-```
-Ou bien:
-```json
-{
-  "availability": [
-    { "date": "2025-08-25", "times": ["09:00", "10:30"] },
-    { "date": "2025-08-26", "times": ["14:00"] }
-  ]
-}
-```
+
 
 ## 🎨 UI — Barre haute et pied de page
 - Barre haute: **CuraTime** + boutons **Accueil** et **Support** + bouton unique **Connexion** (si non connecté) ou menu utilisateur + **Déconnexion**.
